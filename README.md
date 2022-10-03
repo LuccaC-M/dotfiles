@@ -1,5 +1,5 @@
 # Dotfiles
-
+Error detected in install do not use the install script
 ## Install
 
 To install quickly just use the setup-arch.sh (only for arch users btw).
