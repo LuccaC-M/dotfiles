@@ -9,15 +9,24 @@
 
 echo 'This script is not designed to be run as root'
 echo 'The program will use sudo'
+sleep 3;
+
+# Making files executables
+
+chmod +x $HOME/dotfiles/dots/polybar/launch.sh
+chmod +x $HOME/dotfiles/dots/polybar/cmus.sh
+chmod +x $HOME/dotfiles/dots/config/bspwm/bspwmrc
+chmod +x $HOME/dotfiles/dots/config/sxhkd/sxhkd
 
 # installing important packages
 sudo pacman -S --noconfirm sddm bspwm sxhkd rofi polybar unzip git alacritty nitrogen xorg-xrdb xorg-xrandr xorg-xsetroot wget dunst
 
 # installing media
-sudo pacman -S --noconfirm pulseaudio pavucontrol mpv flameshot cmus
+sudo pacman -S pulseaudio pavucontrol mpv flameshot cmus
 
 # installing drivers
 
+clear
 
 echo "What type of graphics card you have?"
 printf "nvidia, intel, amd (n/i/a) > "
@@ -54,11 +63,13 @@ esac
 
 # installing other packages
 echo "Installing other packages..."
-sudo pacman -S --noconfirm neovim firefox nemo file-roller feh picom lxappearance 
+sleep 1;
+sudo pacman -S  neovim firefox nemo file-roller feh picom lxappearance 
+
 
 # installing AUR
 aur=none
-#clear
+clear
 printf "yay or paru (y/p/n) > "
 read aur
 
