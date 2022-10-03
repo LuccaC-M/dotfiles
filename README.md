@@ -17,3 +17,9 @@ pulseaudio mpv nemo flameshot cmus file-roller
 
 Fonts 
 JetBrains, FiraCode, UbuntuMono
+
+The GTK themes/icons are
+
+Cursor: https://www.gnome-look.org/p/1795042
+Icon theme: https://www.gnome-look.org/p/1661983
+GTK theme: https://www.gnome-look.org/p/1357889
