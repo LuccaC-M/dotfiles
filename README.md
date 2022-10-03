@@ -9,7 +9,7 @@ if you want to install it manually
 ##### Packages
 The nesessary packages
 ```
-sddm bspwm dunst polybar sxhkd rofi lxappearence alacritty
+sddm bspwm dunst polybar sxhkd rofi lxappearance alacritty
 ```
 Other packages
 ```
