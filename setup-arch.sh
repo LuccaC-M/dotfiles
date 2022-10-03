@@ -11,10 +11,10 @@ echo 'This script is not designed to be run as root'
 echo 'The program will use sudo'
 
 # installing important packages
-sudo pacman -S --noconfirm sddm bspwm sxhkd rofi polybar unzip git alacritty nitrogen xorg-xrdb xorg-xsetroot wget dunst > /dev/null
+sudo pacman -S --noconfirm sddm bspwm sxhkd rofi polybar unzip git alacritty nitrogen xorg-xrdb xorg-xrandr xorg-xsetroot wget dunst
 
 # installing media
-sudo pacman -S --noconfirm pulseaudio pavucontrol mpv flameshot cmus > /dev/null
+sudo pacman -S --noconfirm pulseaudio pavucontrol mpv flameshot cmus
 
 # installing drivers
 
@@ -28,7 +28,7 @@ case "$graphics" in
     "i") 
     echo "Installing xf86-video-intel..."
     sleep 1
-    sudo pacman -S --noconfirm xf86-video-intel > /dev/null
+    sudo pacman -S --noconfirm xf86-video-intel
     ;;
     
     "n") 
@@ -37,13 +37,13 @@ case "$graphics" in
     sleep 1
     echo "Installing nvidia-open..."
     sleep 1
-    sudo pacman -S --noconfirm nvidia-open > /dev/null
+    sudo pacman -S --noconfirm nvidia-open
     ;;
     
     "a")  
     echo "Installing xf86-video-amdgpu..."
     sleep 1
-    sudo pacman -S --noconfirm xf86-video-amdgpu > /dev/null
+    sudo pacman -S --noconfirm xf86-video-amdgpu
     ;;
     
     *)
@@ -54,7 +54,7 @@ esac
 
 # installing other packages
 echo "Installing other packages..."
-sudo pacman -S --noconfirm neovim firefox nemo file-roller feh picom lxappearance > /dev/null
+sudo pacman -S --noconfirm neovim firefox nemo file-roller feh picom lxappearance 
 
 # installing AUR
 aur=none
@@ -66,17 +66,17 @@ case "$aur" in
     #case 1
     "y") 
     echo "Installing yay..."
-    git clone https://aur.archlinux.org/yay.git > /dev/null
+    git clone https://aur.archlinux.org/yay.git
     mv yay ~/.yay && cd ~/.yay
-    makepkg -si > /dev/null
+    makepkg -si
     ;;
     
     #case 2
     "p") 
     echo "Installing paru..."
-    git clone https://aur.archlinux.org/paru.git > /dev/null
+    git clone https://aur.archlinux.org/paru.git
     mv paru ~/.paru && cd ~/.paru
-    makepkg -si > /dev/null
+    makepkg -si
     ;;
       
     #case 3
@@ -110,18 +110,18 @@ echo "Files copied."
 
 # installing fonts (system wide)
 echo "Installing fonts..."
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip > /dev/null
-sudo unzip FiraCode.zip -d /usr/share/fonts > /dev/null
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/UbuntuMono.zip > /dev/null
-sudo unzip UbuntuMono.zip -d /usr/share/fonts > /dev/null
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip > /dev/null
-sudo unzip JetBrainsMono.zip -d /usr/share/fonts > /dev/null
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip
+sudo unzip FiraCode.zip -d /usr/share/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/UbuntuMono.zip 
+sudo unzip UbuntuMono.zip -d /usr/share/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip 
+sudo unzip JetBrainsMono.zip -d /usr/share/fonts 
 rm -rf JetBrainsMono.zip FiraCode.zip UbuntuMono.zip
 echo "Fonts Installed."
 
 # installing sddm theme
 echo "Installing sddm theme..."
-git clone https://github.com/gabretana/simplicity-sddm-theme > /dev/null
+git clone https://github.com/gabretana/simplicity-sddm-theme
 sudo mv simplicity-sddm-theme/simplicity /usr/share/sddm/themes
 rm -rf $HOME/simplicity-sddm-theme
 echo "Theme Installed."
