@@ -22,7 +22,7 @@ chmod +x $HOME/dotfiles/dots/config/sxhkd/sxhkd
 sudo pacman -S --noconfirm sddm bspwm sxhkd rofi polybar unzip git alacritty nitrogen xorg-xrdb xorg-xrandr xorg-xsetroot wget dunst
 
 # installing media
-sudo pacman -S pulseaudio pavucontrol mpv flameshot cmus
+sudo pacman -S pipewire-jack pipewire-alsa pipewire-pulse pavucontrol mpv flameshot cmus
 
 # installing drivers
 
