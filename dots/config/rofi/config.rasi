@@ -1,2 +1,7 @@
 //@theme "/usr/share/rofi/themes/Arc.rasi"
-@theme "~/.local/share/rofi/themes/rounded-nord-dark.rasi"
+@theme "~/.local/share/rofi/themes/rounded-blue.rasi"
+configuration {
+ modi: "window,drun,ssh";
+ combi-modi: "window,drun,ssh";
+ show-icons: true;
+ }

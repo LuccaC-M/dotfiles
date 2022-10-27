@@ -14,15 +14,15 @@ sleep 3;
 # Making files executables
 
 chmod +x $HOME/dotfiles/dots/polybar/launch.sh
-chmod +x $HOME/dotfiles/dots/polybar/cmus.sh
+chmod +x $HOME/dotfiles/dots/polybar/player-moc.sh
 chmod +x $HOME/dotfiles/dots/config/bspwm/bspwmrc
 chmod +x $HOME/dotfiles/dots/config/sxhkd/sxhkd
 
 # installing important packages
-sudo pacman -S --noconfirm sddm bspwm sxhkd rofi polybar unzip git alacritty nitrogen xorg-xrdb xorg-xrandr xorg-xsetroot wget dunst
+sudo pacman -S --noconfirm sddm bspwm sxhkd rofi polybar unzip git kitty nitrogen xorg-xrdb xorg-xrandr xorg-xsetroot wget dunst
 
 # installing media
-sudo pacman -S pipewire-jack pipewire-alsa pipewire-pulse pavucontrol mpv flameshot cmus
+sudo pacman -S pipewire-jack pipewire-alsa pipewire-pulse pavucontrol mpv flameshot moc
 
 # installing drivers
 

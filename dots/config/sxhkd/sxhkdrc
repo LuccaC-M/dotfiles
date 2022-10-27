@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
 
 # program launcher
 super + @space
@@ -15,8 +15,17 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # Programs
+
 super + f
 	firefox
+
+super + c
+	emacsclient -c -a 'emacs'
+
+super + e
+	nemo
+super + p
+	flameshot gui
 #
 # bspwm hotkeys
 #

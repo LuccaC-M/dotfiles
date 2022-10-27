@@ -1,0 +1,122 @@
+# ~/.config/starship.toml
+
+add_newline = false
+
+# format
+format = """
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$haskell\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$line_break\
+$jobs\
+$battery\
+$status\
+$container\
+$shell\
+$character"""
+
+# ***************
+# LANGUAGES
+# ***************
+
+[c]
+format = "$symbol "
+symbol = "[/](blue)"
+detect_extensions = ["c", "h", "cc", "hh", "cpp", "hpp", "C", "cxx", "hxx"] # C++ needs more extentions
+
+[golang]
+format = "$symbol "
+symbol = "[ﳑ](bold cyan)"
+
+[python]
+format = "$symbol "
+symbol = "[](yellow)"
+
+[lua]
+format = "$symbol "
+symbol = "[](blue)"
+
+[rust]
+format = "$symbol "
+symbol = "[](red)"
+
+[dart]
+format = "$symbol "
+symbol = "[](cyan)"
+
+# **********
+# GIT
+# **********
+
+[git_status]
+conflicted = ""
+ahead = ""
+behind = ""
+diverged = ""
+up_to_date = "✓"
+untracked = ""
+stashed = "📦"
+modified = "📝"
+staged = '[ \($count\)](green)'
+renamed = ""
+deleted = ""
