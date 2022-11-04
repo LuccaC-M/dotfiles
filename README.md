@@ -12,7 +12,7 @@ sddm bspwm dunst polybar sxhkd rofi lxappearance alacritty
 ```
 Other packages
 ```
-pipewire-jack pipewire-alsa pipewire-pulse pavucontrol mpv nemo flameshot cmus file-roller
+pipewire-jack pipewire-alsa pipewire-pulse pavucontrol mpv nemo flameshot mocp file-roller
 ```
 
 ##### Fonts 
