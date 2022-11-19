@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 nitrogen --restore
-picom &
+# picom &
 bspc monitor -d I II III IV V VI
 
 bspc config border_width         2
@@ -23,5 +23,4 @@ bspc rule -a Emacs state=tiled
 bspc rule -a Screenkey manage=off
 
 $HOME/.config/polybar/launch.sh &
-emacs --daemon &
 dunst &
