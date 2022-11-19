@@ -18,10 +18,7 @@ super + Escape
 
 super + f
 	firefox
-
-super + c
-	emacsclient -c -a 'emacs'
-
+	
 super + e
 	nemo
 super + p
