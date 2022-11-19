@@ -3,6 +3,8 @@
 
 To install quickly just use the setup-arch.sh (only for arch users btw).
 
+#### Picom has a bug remember to remove it in the bspwmrc after install
+
 if you want to install it manually
 
 ##### Packages
