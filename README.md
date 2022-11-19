@@ -3,7 +3,7 @@
 
 To install quickly just use the setup-arch.sh (only for arch users btw).
 
-#### Picom has been commented out, due to a bug, just delete the pound sing (#) if you wish to enable it
+#### Picom has been commented out, due to a bug, just delete the pound sing (#) in the bspwmrc, if you wish to enable it
 
 if you want to install it manually
 
