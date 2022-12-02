@@ -1,0 +1,6 @@
+require('settings')
+require('plugins')
+require('mappings')
+require('plugins.bufferline')
+require('plugins.nvim-tree')
+require('plugins.lualine')

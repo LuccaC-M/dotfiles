@@ -18,7 +18,10 @@ super + Escape
 
 super + f
 	firefox
-	
+
+super + c
+	kitty -e "nvim"
+
 super + e
 	nemo
 super + p

@@ -14,7 +14,7 @@ sddm bspwm dunst polybar sxhkd rofi lxappearance alacritty
 ```
 Other packages
 ```
-pipewire-jack pipewire-alsa pipewire-pulse pavucontrol mpv nemo flameshot mocp file-roller
+pipewire-jack pipewire-alsa pipewire-pulse pavucontrol mpv nemo neovim flameshot mocp file-roller zsh
 ```
 
 ##### Fonts 
