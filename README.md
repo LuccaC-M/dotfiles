@@ -3,8 +3,6 @@
 
 To install quickly just use the setup-arch.sh (only for arch users btw).
 
-#### My picom config was bugged I am already building a new version
-
 if you want to install it manually
 
 ##### Packages
